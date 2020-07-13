@@ -15,7 +15,7 @@ if(!isset($_COOKIE["contador"])){
     setcookie("contador", $cookie, time()+ 60*60*24*365, "/", "localhost" ); "i" ; 
     }else{
     //leer el valor de una cookie
-    $cookie=$_COOKIE['contador']=1;
+    $cookie=$_COOKIE['contador']+1;
     setcookie("contador", $cookie, time()+ 60*60*24*365, "/", "localhost" ); "i" ;   
 
     }
