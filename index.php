@@ -9,13 +9,16 @@
     // "/" definimos para todo el sitio o podes pasar un path /carpeta/index.php
     //https si va por un protocolo seguro. true - false 
     //https si va por un protocolo normal. true - false 
-
-    setcookie("contador", 0, time()+ 60*60*24*365, "/" ,false , true ); "i" ; 
+if(!isset($_COOKIE["contador"])){
+    //creo y modifico y elimino la cookie
+    $cookie=0;
+    setcookie("contador", $cookie, time()+ 60*60*24*365, "/" ,false , true ); "i" ; 
+    }else{
     //leer el valor de una cookie
-    
-    $cookie=$_COOKIE['contador'];   
+    $cookie=$_COOKIE['contador']=1;
+    setcookie("contador", $cookie, time()+ 60*60*24*365, "/" ,false , true ); "i" ;   
 
-
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
