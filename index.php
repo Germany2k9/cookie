@@ -12,8 +12,8 @@
 
     setcookie("contador", 0, time()+ 60*60*24*365, "/" ,false , true ); "i" ; 
     //leer el valor de una cookie
-
-    //$cookie=$_COOKIE['contador'];   
+    
+    $cookie=$_COOKIE['contador'];   
 
 
 ?>
@@ -22,14 +22,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="css/bootstrap.css">
+  	<link rel="stylesheet"  type="text/css" href="css/style.css">
+  	<link rel=”shortcut icon” type=”image/png” href=”img/favicon.png”/>
+   	<link rel="stylesheet"  type="text/css" href="css/alertify.min.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Hola Mundo </h1>
     <p> Esto es una prueba de commit en git</p>
-
+    <div class="container">
+        Contador: <div class="badge badge-info"> <?= $_COOKIE  ; ?></div>
+    </div>
     <a href="www.google.com">Lo ke sea pa comitear s</a>
-    <h4>esto es la prueba de que comiteamos en local si se va para la nube.XD</h4> 
+    <h4>esto es la prueba de que comiteamos en local ss i se va para la nube.XD</h4> 
     <?php echo "hola mundo" ; ?>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+	 <script src="js/popper.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+  	 <script src="js/alertify.min.js"></script>
+   	 <script src="alertify/alertify.min.js"></script>
+   	 <script src="moment/moment-with-locales.js"></script>
+	 <script>
+	 	$( document ).ready(function() {
+ 	 	console.log("Are /you READY!!");
+      
+   		 });
+ 
+	</script>
+  <script src="https://kit.fontawesome.com/a03bedb3c1.js"></script>
+</body>
 </body>
 </html>
