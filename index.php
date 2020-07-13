@@ -1,4 +1,4 @@
-<?php echo "i" ; ?>
+<?php setcookie("contador", 0, time()+ 60*60*24*365, "/" ,false , true ); "i" ; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +11,7 @@
     <p> esto es una prueba de commit en git</p>
 
     lo ke sea pa comiitear s
-    <h4>esto es la prueba de que comiteamos en local si se va para la nube.XD</h4>
+    <h4>esto es la prueba de que comiteamos en local si se va para la nube.XD</h4> 
+
 </body>
 </html>
