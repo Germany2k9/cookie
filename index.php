@@ -12,11 +12,11 @@
 if(!isset($_COOKIE["contador"])){
     //creo y modifico y elimino la cookie
     $cookie=0;
-    setcookie("contador", $cookie, time()+ 60*60*24*365, "/" ,false , true ); "i" ; 
+    setcookie("contador", $cookie, time()+ 60*60*24*365, "/", "localhost" ,false , true ); "i" ; 
     }else{
     //leer el valor de una cookie
     $cookie=$_COOKIE['contador']=1;
-    setcookie("contador", $cookie, time()+ 60*60*24*365, "/" ,false , true ); "i" ;   
+    setcookie("contador", $cookie, time()+ 60*60*24*365, "/", "localhost" ,false , true ); "i" ;   
 
     }
 ?>
