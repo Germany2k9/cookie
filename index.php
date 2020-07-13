@@ -29,16 +29,19 @@
     <title>Document</title>
 </head>
 <body>
+<div class="container">
     <h1>Hola Mundo </h1>
-    <p> Esto es una prueba de commit en git</p>
-    <div class="container">
-        Contador: <div class="badge badge-info"> <?= $_COOKIE  ; ?></div>
-    </div>
-    <a href="www.google.com">Lo ke sea pa comitear s</a>
+        <p> Esto es una prueba de commit en git</p>
+    
+        Contador: <div class="badge badge-info"> <?= $cookie  ; ?></div>
+    
+         <a href="www.google.com">Lo ke sea pa comitear s</a>
     <h4>esto es la prueba de que comiteamos en local ss i se va para la nube.XD</h4> 
-    <?php echo "hola mundo" ; ?>
+        <?php 
+        echo "hola mundo"
+         ; ?>
 
-
+</div>
     <script src="js/jquery-3.4.1.min.js"></script>
 	 <script src="js/popper.min.js"></script>
 	 <script src="js/bootstrap.min.js"></script>
